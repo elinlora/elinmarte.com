@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input,
+button {
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+}/*# sourceMappingURL=main.css.map */
