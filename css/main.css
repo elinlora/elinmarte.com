@@ -51,8 +51,8 @@ body {
 
 header {
   padding: 1.5em 0;
-  width: 100%;
   position: fixed;
+  width: 100%;
   top: 0;
 }
 header .container {
@@ -68,4 +68,19 @@ header .container nav ul {
 .hero {
   background-image: url("/img/funky-lines.png");
   min-height: 100vh;
+}
+.hero .container {
+  display: grid;
+  place-content: center;
+}
+.hero .container .hero__content {
+  display: flex;
+  align-items: center;
+  margin-top: 15em;
+}
+.hero .container .hero__content .hero__copy {
+  width: 60%;
+}
+.hero .container .hero__content .hero__img {
+  width: 40%;
 }/*# sourceMappingURL=main.css.map */
