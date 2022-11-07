@@ -34,13 +34,15 @@ button {
   --clr-primary-700: #6082B6;
   --clr-primary-800: #FAF9F6;
   --clr-primary-900: #E35335;
-  --ff-primary: Poppins, sans-serif;
-  --ff-secondary: "Libre Baskerville", serif;
+  --ff-primary: Roboto, sans-serif;
+  --ff-secondary: Oswald, sans-serif;
 }
 
 body {
   min-height: 100vh;
   min-width: 100%;
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-600);
 }
 
 .container {
@@ -60,9 +62,37 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+header .container .header__logo {
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+header .container .header__logo a {
+  color: var(--clr-primary-600);
+  transition: color 0.15s ease-in-out;
+  cursor: default;
+}
+header .container .header__logo a:hover {
+  color: var(--clr-primary-900);
+}
 header .container nav ul {
   display: flex;
-  gap: 1em;
+  gap: 3em;
+}
+header .container nav ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+header .container nav ul li a {
+  color: var(--clr-primary-600);
+  transition: color 0.15s ease-in-out;
+}
+header .container nav ul li a:hover {
+  color: var(--clr-primary-900);
 }
 
 .hero {
