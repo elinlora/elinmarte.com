@@ -65,8 +65,8 @@ header {
     justify-content: space-between;
     .header__logo {
       font-family: var(--ff-secondary);
-      font-size: 2rem;
-      font-weight: 200;
+      font-size: 2.1em;
+      font-weight: 300;
       text-transform: uppercase;
       letter-spacing: .3rem;
       a {
@@ -79,10 +79,6 @@ header {
       }
     }
     nav {
-      // display: none;
-      // @media only screen and (min-width: 62em) {
-      //   display: block;
-      // }
       .header__hamburger {
         width: 1.8rem;
         display: flex;
@@ -135,25 +131,33 @@ header {
       @media only screen and (min-width: 62em) {
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
       }
       .hero__copy {
         @media only screen and (min-width: 62em) {
-          width: 60%;
+          width: 50%;
         }
         .hero__heading {
           font-size: 2.4rem;
+          @media only screen and (min-width: 62em) {
+            font-size: 4.2rem;
+          }
         }
         .hero__sub-heading {
           font-size: 1.5rem;
           font-weight: 300;
           margin-top: .5em;
+          @media only screen and (min-width: 62em) {
+            font-size: 2.1rem;
+            font-weight: 400;
+          }
         }
       }
       .hero__img {
         width: 24rem;
         align-self: center;
         @media only screen and (min-width: 62em) {
-          width: 40%;
+          width: 50%;
         }
       }
     }

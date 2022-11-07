@@ -64,8 +64,8 @@ header .container {
 }
 header .container .header__logo {
   font-family: var(--ff-secondary);
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 2.1em;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
@@ -132,20 +132,32 @@ header .container nav ul li a:hover {
   .hero .container .hero__content {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content .hero__copy {
-    width: 60%;
+    width: 50%;
   }
 }
 .hero .container .hero__content .hero__copy .hero__heading {
   font-size: 2.4rem;
 }
+@media only screen and (min-width: 62em) {
+  .hero .container .hero__content .hero__copy .hero__heading {
+    font-size: 4.2rem;
+  }
+}
 .hero .container .hero__content .hero__copy .hero__sub-heading {
   font-size: 1.5rem;
   font-weight: 300;
   margin-top: 0.5em;
+}
+@media only screen and (min-width: 62em) {
+  .hero .container .hero__content .hero__copy .hero__sub-heading {
+    font-size: 2.1rem;
+    font-weight: 400;
+  }
 }
 .hero .container .hero__content .hero__img {
   width: 24rem;
@@ -153,6 +165,6 @@ header .container nav ul li a:hover {
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content .hero__img {
-    width: 40%;
+    width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
