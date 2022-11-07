@@ -79,6 +79,10 @@ header {
       }
     }
     nav {
+      display: none;
+      @media only screen and (min-width: 62em) {
+        display: block;
+      }
       ul {
         display: flex;
         gap: 3em;
@@ -106,18 +110,25 @@ header {
   .container {
     display: grid;
     place-content: center;
-    // padding-top: 12em;
     .hero__content {
       display: flex;
       align-items: center;
+      flex-direction: column;
       margin-top: 15em;
+      @media only screen and (min-width: 62em) {
+        flex-direction: row;
+      }
       .hero__copy {
-        width: 60%;
+        @media only screen and (min-width: 62em) {
+          width: 60%;
+        }
         .hero__heading {
         }
       }
       .hero__img {
-        width: 40%;
+        @media only screen and (min-width: 62em) {
+          width: 40%;
+        }
       }
     }
   }
