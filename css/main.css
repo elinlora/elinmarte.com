@@ -77,17 +77,32 @@ header .container .header__logo a {
 header .container .header__logo a:hover {
   color: var(--clr-primary-900);
 }
-header .container nav {
+header .container nav .header__hamburger {
+  width: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  cursor: pointer;
+}
+@media only screen and (min-width: 62em) {
+  header .container nav .header__hamburger {
+    display: none;
+  }
+}
+header .container nav .header__hamburger .bar {
+  height: 0.2rem;
+  background-color: var(--clr-primary-600);
+  width: 100%;
+  border-radius: 0.5rem;
+}
+header .container nav ul {
   display: none;
 }
 @media only screen and (min-width: 62em) {
-  header .container nav {
-    display: block;
+  header .container nav ul {
+    display: flex;
+    gap: 3em;
   }
-}
-header .container nav ul {
-  display: flex;
-  gap: 3em;
 }
 header .container nav ul li {
   font-size: 1rem;
@@ -107,25 +122,34 @@ header .container nav ul li a:hover {
   background-image: url("/img/funky-lines.png");
   min-height: 100vh;
 }
-.hero .container {
-  display: grid;
-  place-content: center;
-}
 .hero .container .hero__content {
   display: flex;
-  align-items: center;
+  gap: 6em;
   flex-direction: column;
-  margin-top: 15em;
+  padding-top: 15em;
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content {
     flex-direction: row;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content .hero__copy {
     width: 60%;
   }
+}
+.hero .container .hero__content .hero__copy .hero__heading {
+  font-size: 2.4rem;
+}
+.hero .container .hero__content .hero__copy .hero__sub-heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+.hero .container .hero__content .hero__img {
+  width: 24rem;
+  align-self: center;
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content .hero__img {

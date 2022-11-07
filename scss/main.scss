@@ -79,13 +79,32 @@ header {
       }
     }
     nav {
-      display: none;
-      @media only screen and (min-width: 62em) {
-        display: block;
+      // display: none;
+      // @media only screen and (min-width: 62em) {
+      //   display: block;
+      // }
+      .header__hamburger {
+        width: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+        cursor: pointer;
+        @media only screen and (min-width: 62em) {
+          display: none;
+        }
+        .bar {
+          height: .2rem;
+          background-color: var(--clr-primary-600);
+          width: 100%;
+          border-radius: .5rem;
+        }
       }
       ul {
-        display: flex;
-        gap: 3em;
+        display: none;
+        @media only screen and (min-width: 62em) {
+          display: flex;
+          gap: 3em;
+        }
         li {
           font-size: 1rem;
           font-weight: 500;
@@ -108,24 +127,31 @@ header {
   background-image: url('/img/funky-lines.png');
   min-height: 100vh;
   .container {
-    display: grid;
-    place-content: center;
     .hero__content {
       display: flex;
-      align-items: center;
+      gap: 6em;
       flex-direction: column;
-      margin-top: 15em;
+      padding-top: 15em;
       @media only screen and (min-width: 62em) {
         flex-direction: row;
+        align-items: center;
       }
       .hero__copy {
         @media only screen and (min-width: 62em) {
           width: 60%;
         }
         .hero__heading {
+          font-size: 2.4rem;
+        }
+        .hero__sub-heading {
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin-top: .5em;
         }
       }
       .hero__img {
+        width: 24rem;
+        align-self: center;
         @media only screen and (min-width: 62em) {
           width: 40%;
         }
