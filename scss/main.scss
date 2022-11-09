@@ -32,12 +32,12 @@ button {
   --clr-primary-400: #36454F;
   --clr-primary-500: #A7C7E7;
   --clr-primary-600: #353935;
-  --clr-primary-700: #6082B6;
-  --clr-primary-800: #FAF9F6;
+  --clr-primary-700: #5D3FD3;
+  --clr-primary-800: #E9DCC9;
   --clr-primary-900: #E35335;
 
   --ff-primary: Roboto, sans-serif;
-  --ff-secondary: Oswald, sans-serif;
+  --ff-secondary: 'EB Garamond', sans-serif;
 
 }
 
@@ -55,6 +55,10 @@ body {
   width: 90%;
 }
 
+.is-scrolling {
+  background-color: var(--clr-primary-800);
+}
+
 header {
   padding: 1em 0;
   position: fixed;
@@ -66,16 +70,15 @@ header {
     justify-content: space-between;
     .header__logo {
       font-family: var(--ff-secondary);
-      font-size: 2.1em;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: .3rem;
+      font-size: 2.7em;
+      font-weight: 900;
+      letter-spacing: .21rem;
       a {
         color: var(--clr-primary-600);
         transition: color .15s ease-in-out;
         cursor: default;
         &:hover {
-          color: var(--clr-primary-700);
+          opacity: 75%;
         }
       }
     }
@@ -111,15 +114,12 @@ header {
             color: var(--clr-primary-600);
             transition: color .15s ease-in-out;
             &:hover {
-              color: var(--clr-primary-700);
+              opacity: 70%;
             }
           }
         }
       }
     }
-  }
-  &.is-scrolling {
-    background-color: var(--clr-primary-800);
   }
 }
 
