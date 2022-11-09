@@ -53,7 +53,7 @@ body {
 }
 
 header {
-  padding: 1.5em 0;
+  padding: 1em 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -117,6 +117,9 @@ header .container nav ul li a {
 }
 header .container nav ul li a:hover {
   color: var(--clr-primary-700);
+}
+header.is-scrolling {
+  background-color: var(--clr-primary-800);
 }
 
 .hero {
