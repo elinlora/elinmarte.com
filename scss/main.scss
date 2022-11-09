@@ -180,6 +180,16 @@ header {
       flex-direction: row;
       align-items: center;
     }
+    &:nth-of-type(2) {
+      margin-top: 6em;
+      @media only screen and (min-width: 62em) {
+        flex-direction: row-reverse;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+      }
+    }
     .services__section--img-box {
       margin: 0 auto;
       @media only screen and (min-width: 62em) {
@@ -200,28 +210,20 @@ header {
         margin: unset;
       }
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        color: var(--clr-primary-400);
         z-index: 1;
+        text-align: center;
         @media only screen and (min-width: 62em) {
+          text-align: unset;
           font-size: 2.7rem;
-          &:after {
-            content: '';
-            display: block;
-            background-color: var(--clr-primary-500);
-            width: 25rem;
-            height: 1.5rem;
-            position: relative;
-            top: -1.7rem;
-            left: .9rem;
-            z-index: -1;
-          }
         }
       }
       p {
         margin-top: 1em;
         @media only screen and (min-width: 62em) {
           font-size: 1.2em;
-          margin: unset;
+          margin-top: .5rem;
           line-height: 1.8rem;
         }
       }
