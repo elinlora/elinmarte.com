@@ -170,6 +170,30 @@ header .container nav ul li a:hover {
 }
 
 .services {
-  padding: 3em 0;
+  padding: 4.5em 0;
   background-color: #fff;
+}
+.services .services__section {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 62em) {
+  .services .services__section {
+    flex-direction: row;
+  }
+}
+.services .services__section .services__section--img-box {
+  margin: 0 auto;
+}
+.services .services__section .services__section--img-box img {
+  width: 21rem;
+}
+.services .services__section .services__section--content {
+  margin-top: 2em;
+}
+.services .services__section .services__section--content h2 {
+  font-size: 1.5rem;
+}
+.services .services__section .services__section--content p {
+  margin-top: 1em;
 }/*# sourceMappingURL=main.css.map */
