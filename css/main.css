@@ -43,6 +43,7 @@ body {
   min-width: 100%;
   font-family: var(--ff-primary);
   color: var(--clr-primary-600);
+  background-color: #fff;
 }
 
 .container {
@@ -75,7 +76,7 @@ header .container .header__logo a {
   cursor: default;
 }
 header .container .header__logo a:hover {
-  color: var(--clr-primary-900);
+  color: var(--clr-primary-700);
 }
 header .container nav .header__hamburger {
   width: 1.8rem;
@@ -105,7 +106,7 @@ header .container nav ul {
   }
 }
 header .container nav ul li {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -115,7 +116,7 @@ header .container nav ul li a {
   transition: color 0.15s ease-in-out;
 }
 header .container nav ul li a:hover {
-  color: var(--clr-primary-900);
+  color: var(--clr-primary-700);
 }
 
 .hero {
@@ -172,6 +173,13 @@ header .container nav ul li a:hover {
 .services {
   padding: 4.5em 0;
   background-color: #fff;
+  position: relative;
+  z-index: -2;
+}
+@media only screen and (min-width: 62em) {
+  .services {
+    padding: 7em 0;
+  }
 }
 .services .services__section {
   display: flex;
@@ -180,20 +188,62 @@ header .container nav ul li a:hover {
 @media only screen and (min-width: 62em) {
   .services .services__section {
     flex-direction: row;
+    align-items: center;
   }
 }
 .services .services__section .services__section--img-box {
   margin: 0 auto;
 }
+@media only screen and (min-width: 62em) {
+  .services .services__section .services__section--img-box {
+    width: 50%;
+  }
+}
 .services .services__section .services__section--img-box img {
   width: 21rem;
 }
+@media only screen and (min-width: 62em) {
+  .services .services__section .services__section--img-box img {
+    width: 30rem;
+  }
+}
 .services .services__section .services__section--content {
   margin-top: 2em;
+  position: relative;
+}
+@media only screen and (min-width: 62em) {
+  .services .services__section .services__section--content {
+    width: 50%;
+    margin: unset;
+  }
 }
 .services .services__section .services__section--content h2 {
   font-size: 1.5rem;
+  z-index: 1;
+}
+@media only screen and (min-width: 62em) {
+  .services .services__section .services__section--content h2 {
+    font-size: 2.7rem;
+  }
+  .services .services__section .services__section--content h2:after {
+    content: "";
+    display: block;
+    background-color: var(--clr-primary-500);
+    width: 25rem;
+    height: 1.5rem;
+    position: relative;
+    top: -1.7rem;
+    left: 0.9rem;
+    z-index: -1;
+  }
 }
 .services .services__section .services__section--content p {
   margin-top: 1em;
+}
+@media only screen and (min-width: 62em) {
+  .services .services__section .services__section--content p {
+    font-size: 1.2em;
+    margin: unset;
+    line-height: 1.8rem;
+  }
 }/*# sourceMappingURL=main.css.map */

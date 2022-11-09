@@ -46,6 +46,7 @@ body {
   min-width: 100%;
   font-family: var(--ff-primary);
   color: var(--clr-primary-600);
+  background-color: #fff;
 }
 
 .container {
@@ -74,7 +75,7 @@ header {
         transition: color .15s ease-in-out;
         cursor: default;
         &:hover {
-          color: var(--clr-primary-900);
+          color: var(--clr-primary-700);
         }
       }
     }
@@ -102,7 +103,7 @@ header {
           gap: 3em;
         }
         li {
-          font-size: 1rem;
+          font-size: 1.2rem;
           font-weight: 500;
           text-transform: uppercase;
           letter-spacing: .1rem;
@@ -110,7 +111,7 @@ header {
             color: var(--clr-primary-600);
             transition: color .15s ease-in-out;
             &:hover {
-              color: var(--clr-primary-900);
+              color: var(--clr-primary-700);
             }
           }
         }
@@ -167,25 +168,62 @@ header {
 .services {
   padding: 4.5em 0;
   background-color: #fff;
+  position: relative;
+  z-index: -2;
+  @media only screen and (min-width: 62em) {
+    padding: 7em 0;
+  }
   .services__section {
     display: flex;
     flex-direction: column;
     @media only screen and (min-width: 62em) {
       flex-direction: row;
+      align-items: center;
     }
     .services__section--img-box {
       margin: 0 auto;
+      @media only screen and (min-width: 62em) {
+        width: 50%;
+      } 
       img {
         width: 21rem;
+        @media only screen and (min-width: 62em) {
+          width: 30rem;
+        }
       }
     }
     .services__section--content {
       margin-top: 2em;
+      position: relative;
+      @media only screen and (min-width: 62em) {
+        width: 50%;
+        margin: unset;
+      }
       h2 {
         font-size: 1.5rem;
+        z-index: 1;
+        @media only screen and (min-width: 62em) {
+          font-size: 2.7rem;
+          &:after {
+            content: '';
+            display: block;
+            background-color: var(--clr-primary-500);
+            width: 25rem;
+            height: 1.5rem;
+            position: relative;
+            top: -1.7rem;
+            left: .9rem;
+            z-index: -1;
+          }
+        }
       }
       p {
         margin-top: 1em;
+        @media only screen and (min-width: 62em) {
+          font-size: 1.2em;
+          margin: unset;
+          line-height: 1.8rem;
+        }
       }
     }
   }
