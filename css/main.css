@@ -298,4 +298,11 @@ header .container nav ul li a:hover {
 .projects .projects__grid .projects__grid--email:hover {
   opacity: 70%;
   transform: scale(102%);
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 3em 0;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
