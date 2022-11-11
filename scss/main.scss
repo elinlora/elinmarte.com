@@ -143,8 +143,10 @@ header {
         }
         .hero__heading {
           font-size: 3rem;
+          line-height: 4rem;
           @media only screen and (min-width: 62em) {
             font-size: 4.5rem;
+            line-height: unset;
           }
           .hero__heading--name {
             text-decoration: .5rem double underline;
