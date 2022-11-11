@@ -64,6 +64,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 99;
   .container {
     display: flex;
     align-items: center;
@@ -72,7 +73,6 @@ header {
       font-family: var(--ff-secondary);
       font-size: 2.7em;
       font-weight: 900;
-      letter-spacing: .21rem;
       a {
         color: var(--clr-primary-600);
         transition: color .15s ease-in-out;
@@ -144,7 +144,10 @@ header {
         .hero__heading {
           font-size: 3rem;
           @media only screen and (min-width: 62em) {
-            font-size: 5rem;
+            font-size: 4.5rem;
+          }
+          .hero__heading--name {
+            text-decoration: .5rem double underline;
           }
         }
         .hero__sub-heading {

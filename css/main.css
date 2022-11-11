@@ -61,6 +61,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 99;
 }
 header .container {
   display: flex;
@@ -71,7 +72,6 @@ header .container .header__logo {
   font-family: var(--ff-secondary);
   font-size: 2.7em;
   font-weight: 900;
-  letter-spacing: 0.21rem;
 }
 header .container .header__logo a {
   color: var(--clr-primary-600);
@@ -149,8 +149,12 @@ header .container nav ul li a:hover {
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content .hero__copy .hero__heading {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
+}
+.hero .container .hero__content .hero__copy .hero__heading .hero__heading--name {
+  -webkit-text-decoration: 0.5rem double underline;
+          text-decoration: 0.5rem double underline;
 }
 .hero .container .hero__content .hero__copy .hero__sub-heading {
   font-size: 1.5rem;
