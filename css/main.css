@@ -128,15 +128,17 @@ header .container nav ul li a:hover {
 }
 .hero .container .hero__content {
   display: flex;
-  gap: 6em;
+  gap: 3em;
   flex-direction: column;
-  padding-top: 15em;
+  padding-top: 12em;
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content {
+    gap: 6em;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 15em;
   }
 }
 @media only screen and (min-width: 62em) {
@@ -209,7 +211,7 @@ header .container nav ul li a:hover {
   display: none;
   place-items: center;
   border-radius: 1rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.09);
   background-color: #fff;
 }
 @media only screen and (min-width: 62em) {
