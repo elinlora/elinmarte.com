@@ -31,7 +31,7 @@ button {
   --clr-primary-400: #36454F;
   --clr-primary-500: #A7C7E7;
   --clr-primary-600: #353935;
-  --clr-primary-700: #5D3FD3;
+  --clr-primary-700: #6c63ff;
   --clr-primary-800: #FFFFF0;
   --clr-primary-900: #E35335;
   --ff-primary: Roboto, sans-serif;
@@ -145,18 +145,24 @@ header .container nav ul li a:hover {
   }
 }
 .hero .container .hero__content .hero__copy .hero__heading {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: var(--clr-primary-700);
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content .hero__copy .hero__heading {
-    font-size: 4.5rem;
-    line-height: unset;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
 .hero .container .hero__content .hero__copy .hero__heading .hero__heading--name {
-  -webkit-text-decoration: 0.5rem double underline;
-          text-decoration: 0.5rem double underline;
+  color: var(--clr-primary-600);
+  font-size: 3rem;
+}
+@media only screen and (min-width: 62em) {
+  .hero .container .hero__content .hero__copy .hero__heading .hero__heading--name {
+    font-size: 4rem;
+  }
 }
 .hero .container .hero__content .hero__copy .hero__sub-heading {
   font-size: 1.5rem;
@@ -181,7 +187,7 @@ header .container nav ul li a:hover {
 .hero .container .hero__content .hero__img .hero__img--widget {
   position: absolute;
   top: -6rem;
-  right: 2.1rem;
+  right: 1rem;
   width: 6rem;
   height: 6rem;
   display: none;
@@ -206,7 +212,7 @@ header .container nav ul li a:hover {
 }
 .hero .container .hero__content .hero__img .hero__img--widget:nth-of-type(3) {
   right: unset;
-  top: -2.1rem;
+  top: -1rem;
   left: 3rem;
 }
 .hero .container .hero__content .hero__img .hero__img--widget:nth-of-type(3) .hero__img--widget-img {
