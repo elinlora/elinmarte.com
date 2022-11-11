@@ -180,7 +180,7 @@ header .container nav ul li a:hover {
 }
 @media only screen and (min-width: 62em) {
   .services {
-    padding: 7em 0;
+    padding: 9em 0;
   }
 }
 .services .services__section {
@@ -255,4 +255,47 @@ header .container nav ul li a:hover {
     margin-top: 0.5rem;
     line-height: 1.8rem;
   }
+}
+
+.projects {
+  background-color: #fcfcfc;
+  padding: 6em 0;
+}
+.projects .equal-parts {
+  background-image: url("/img/equal-parts-thumbnail.png");
+}
+.projects .the-information {
+  background-image: url("/img/the-information-thumbnail.png");
+}
+.projects .fast {
+  background-image: url("/img/fast-thumbnail.png");
+}
+.projects .netflix {
+  background-image: url("/img/netflix.png");
+}
+.projects .spotify {
+  background-image: url("/img/spotify.png");
+}
+.projects .uber {
+  background-image: url("/img/uber.png");
+}
+.projects .projects__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+}
+.projects .projects__grid .projects__grid--email {
+  width: 10rem;
+  height: 21rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 6px 1.5px rgba(0, 0, 0, 0.07);
+  background-size: 25rem;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.projects .projects__grid .projects__grid--email:hover {
+  opacity: 70%;
+  transform: scale(102%);
 }/*# sourceMappingURL=main.css.map */
