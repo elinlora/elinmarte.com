@@ -162,10 +162,43 @@ header {
         }
       }
       .hero__img {
+        position: relative;
         width: 24rem;
         align-self: center;
         @media only screen and (min-width: 62em) {
           width: 50%;
+        }
+        .hero__img--widget {
+          position: absolute;
+          top: -6rem;
+          right: 2.1rem;
+          width: 6rem;
+          height: 6rem;
+          display: none;
+          place-items: center;
+          border-radius: 1rem;
+          box-shadow: 0px 0px 12px rgba(0,0,0,0.06);
+          background-color: #fff;
+          @media only screen and (min-width: 62em) {
+            display: grid;
+          }
+          .hero__img--widget-img {
+            width: 4rem;
+          }
+        }
+        .hero__img--widget:nth-of-type(2) {
+          top: unset;
+          right: unset;
+          left: 11rem;
+          bottom: -4.5rem;
+        }
+        .hero__img--widget:nth-of-type(3) {
+          right: unset;
+          top: -2.1rem;
+          left: 3rem;
+          .hero__img--widget-img {
+            width: 6rem;
+          }
         }
       }
     }
