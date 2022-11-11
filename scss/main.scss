@@ -165,6 +165,26 @@ header {
             font-size: 2rem;
           }
         }
+        .hero__social {
+          display: flex;
+          gap: .5em;
+          margin-top: 1em;
+          align-items: center;
+          .hero__social-link:nth-of-type(1) {
+            img {
+              width: 2.4rem;
+            }
+          }
+          .hero__social-link:nth-of-type(2) {
+            img {
+              width: 2.1rem;
+            }
+          }
+          img:hover,
+          img:focus {
+            opacity: 75%;
+          }
+        }
       }
       .hero__img {
         position: relative;
@@ -206,7 +226,7 @@ header {
           }
         }
         .hero__img--widget:nth-of-type(4) {
-          right: 4.5rem;
+          right: 6rem;
           top: unset;
           bottom: -8rem;
         }
