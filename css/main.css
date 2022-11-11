@@ -183,6 +183,17 @@ header .container nav ul li a:hover {
     padding: 9em 0;
   }
 }
+.services .services__heading {
+  text-align: center;
+  font-size: 3.3rem;
+  margin-bottom: 1em;
+}
+@media only screen and (min-width: 62em) {
+  .services .services__heading {
+    font-size: 4rem;
+    margin-bottom: 1.2em;
+  }
+}
 .services .services__section {
   display: flex;
   flex-direction: column;
@@ -261,23 +272,16 @@ header .container nav ul li a:hover {
   background-color: #fcfcfc;
   padding: 6em 0;
 }
-.projects .equal-parts {
-  background-image: url("/img/equal-parts-thumbnail.png");
+.projects .projects__heading {
+  text-align: center;
+  font-size: 3.3rem;
+  margin-bottom: 1em;
 }
-.projects .the-information {
-  background-image: url("/img/the-information-thumbnail.png");
-}
-.projects .fast {
-  background-image: url("/img/fast-thumbnail.png");
-}
-.projects .netflix {
-  background-image: url("/img/netflix.png");
-}
-.projects .spotify {
-  background-image: url("/img/spotify.png");
-}
-.projects .uber {
-  background-image: url("/img/uber.png");
+@media only screen and (min-width: 62em) {
+  .projects .projects__heading {
+    font-size: 4rem;
+    margin-bottom: 1.2em;
+  }
 }
 .projects .projects__grid {
   display: flex;
@@ -298,6 +302,24 @@ header .container nav ul li a:hover {
 .projects .projects__grid .projects__grid--email:hover {
   opacity: 70%;
   transform: scale(102%);
+}
+.projects .equal-parts {
+  background-image: url("/img/equal-parts-thumbnail.png");
+}
+.projects .the-information {
+  background-image: url("/img/the-information-thumbnail.png");
+}
+.projects .fast {
+  background-image: url("/img/fast-thumbnail.png");
+}
+.projects .netflix {
+  background-image: url("/img/netflix.png");
+}
+.projects .spotify {
+  background-image: url("/img/spotify.png");
+}
+.projects .uber {
+  background-image: url("/img/uber.png");
 }
 
 footer {

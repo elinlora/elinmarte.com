@@ -175,6 +175,15 @@ header {
   @media only screen and (min-width: 62em) {
     padding: 9em 0;
   }
+  .services__heading {
+    text-align: center;
+    font-size: 3.3rem;
+    margin-bottom: 1em;
+    @media only screen and (min-width: 62em) {
+      font-size: 4rem;
+      margin-bottom: 1.2em;
+    }
+  }
   .services__section {
     display: flex;
     flex-direction: column;
@@ -239,23 +248,14 @@ header {
 .projects {
   background-color: #fcfcfc;
   padding: 6em 0;
-  .equal-parts {
-    background-image: url('/img/equal-parts-thumbnail.png');
-  }
-  .the-information {
-    background-image: url('/img/the-information-thumbnail.png');
-  }
-  .fast {
-    background-image: url('/img/fast-thumbnail.png');
-  }
-  .netflix {
-    background-image: url('/img/netflix.png');
-  }
-  .spotify {
-    background-image: url('/img/spotify.png');
-  }
-  .uber {
-    background-image: url('/img/uber.png');
+  .projects__heading {
+    text-align: center;
+    font-size: 3.3rem;
+    margin-bottom: 1em;
+    @media only screen and (min-width: 62em) {
+      font-size: 4rem;
+      margin-bottom: 1.2em;
+    }
   }
   .projects__grid {
     display: flex;
@@ -276,6 +276,24 @@ header {
         transform: scale(102%);
       }
     }
+  }
+  .equal-parts {
+    background-image: url('/img/equal-parts-thumbnail.png');
+  }
+  .the-information {
+    background-image: url('/img/the-information-thumbnail.png');
+  }
+  .fast {
+    background-image: url('/img/fast-thumbnail.png');
+  }
+  .netflix {
+    background-image: url('/img/netflix.png');
+  }
+  .spotify {
+    background-image: url('/img/spotify.png');
+  }
+  .uber {
+    background-image: url('/img/uber.png');
   }
 }
 
