@@ -194,7 +194,7 @@ header {
         .hero__img--widget:nth-of-type(2) {
           top: unset;
           right: unset;
-          left: 11rem;
+          left: 9rem;
           bottom: -4.5rem;
         }
         .hero__img--widget:nth-of-type(3) {
@@ -204,6 +204,11 @@ header {
           .hero__img--widget-img {
             width: 6rem;
           }
+        }
+        .hero__img--widget:nth-of-type(4) {
+          right: 4.5rem;
+          top: unset;
+          bottom: -8rem;
         }
       }
     }
