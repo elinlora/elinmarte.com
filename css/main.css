@@ -89,7 +89,7 @@ header .container .header__logo a {
   cursor: default;
 }
 header .container .header__logo a:hover {
-  opacity: 75%;
+  color: var(--clr-primary-700);
 }
 header .container nav .header__hamburger {
   width: 1.8rem;
@@ -129,7 +129,7 @@ header .container nav ul li a {
   transition: color 0.15s ease-in-out;
 }
 header .container nav ul li a:hover {
-  opacity: 70%;
+  color: var(--clr-primary-700);
 }
 
 .hero {

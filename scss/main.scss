@@ -84,7 +84,7 @@ header {
         transition: color .15s ease-in-out;
         cursor: default;
         &:hover {
-          opacity: 75%;
+          color: var(--clr-primary-700);
         }
       }
     }
@@ -120,7 +120,7 @@ header {
             color: var(--clr-primary-600);
             transition: color .15s ease-in-out;
             &:hover {
-              opacity: 70%;
+              color: var(--clr-primary-700);
             }
           }
         }
