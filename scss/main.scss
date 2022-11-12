@@ -343,7 +343,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5em;
+    gap: 3em;
     .projects__grid--email {
       width: 10rem;
       height: 21rem;
@@ -353,8 +353,25 @@ header {
       background-size: 25rem;
       background-position: top;
       background-repeat: no-repeat;
-      &:hover {
-        opacity: 70%;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      .project__grid--email-launch {
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        background-color: #000;
+        padding: 1em 0;
+        transition: all .15s ease-in-out;
+        opacity: 0;
+      }
+      &:hover,
+      &:hover .project__grid--email-launch {
+        opacity: 100%;
         transform: scale(102%);
       }
     }
