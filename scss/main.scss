@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 90rem;
   margin: 0 auto;
   width: 90%;
 }
@@ -127,6 +127,9 @@ header {
   background-image: url('/img/funky-lines.png');
   min-height: 100vh;
   .container {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
     .hero__content {
       display: flex;
       gap: 3em;
@@ -137,7 +140,7 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-top: 15em;
+        // padding-top: 18em;
       }
       .hero__copy {
         @media only screen and (min-width: 62em) {
