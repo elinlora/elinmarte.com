@@ -65,7 +65,7 @@ header {
 }
 @media only screen and (min-width: 62em) {
   header {
-    padding: 1.2em 0;
+    padding: 1em 0;
   }
 }
 header .container {
@@ -145,7 +145,6 @@ header .container nav ul li a:hover {
   display: flex;
   gap: 3em;
   flex-direction: column;
-  padding-top: 12em;
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content {
