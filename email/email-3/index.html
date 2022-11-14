@@ -1,0 +1,612 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <title> Fast </title>
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table,
+    td {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    p {
+      display: block;
+      margin: 13px 0;
+    }
+
+  </style>
+  <!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+  <!--[if lte mso 11]>
+    <style type="text/css">
+      .mj-outlook-group-fix { width:100% !important; }
+    </style>
+    <![endif]-->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,700);
+
+  </style>
+  <!--<![endif]-->
+  <style type="text/css">
+    @media only screen and (min-width:480px) {
+      .mj-column-per-100 {
+        width: 100% !important;
+        max-width: 100%;
+      }
+    }
+
+  </style>
+  <style media="screen and (min-width:480px)">
+    .moz-text-html .mj-column-per-100 {
+      width: 100% !important;
+      max-width: 100%;
+    }
+
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width:480px) {
+      table.mj-full-width-mobile {
+        width: 100% !important;
+      }
+
+      td.mj-full-width-mobile {
+        width: auto !important;
+      }
+    }
+
+  </style>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    .transaction {
+      padding-top: 2.5em;
+    }
+
+    .transaction-text {
+      font-size: 1.1em;
+    }
+
+    .greet-sym {
+      padding-top: 2em;
+    }
+
+    .greeting {
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+
+    .greet {
+      padding-top: 2em;
+      padding-bottom: 2.5em;
+    }
+
+    .greet-news {
+      font-size: 1.1em;
+      line-height: 1.4;
+      padding-bottom: 2.5em;
+    }
+
+    .greet-news>span {
+      font-weight: 700;
+    }
+
+    .meter-bar {
+      background-color: #e8e8e8;
+      height: 9px;
+      border-radius: 3px;
+    }
+
+    .meter-bar-fill {
+      background-color: #0c845c;
+      height: 100%;
+      width: 50%;
+      border-radius: 3px;
+    }
+
+    .shipped {
+      color: #0c845c;
+      font-size: .925em;
+      font-weight: 600;
+      padding-top: .325em;
+      padding-bottom: 2em;
+    }
+
+    .track-btn {
+      display: inline-block;
+      background-color: #000000;
+      font-weight: 600;
+      width: 100%;
+      text-align: center;
+      padding: .825em;
+      text-decoration: none;
+      color: #ffffff;
+      border-radius: 6px;
+    }
+
+    .update {
+      text-align: center;
+      padding-top: 1.7em;
+      font-size: .825em;
+    }
+
+    .spacer {
+      background-color: #f0f2f5;
+      height: 1em;
+    }
+
+    .transaction-order-id {
+      padding-top: 1.5em;
+    }
+
+    .transaction-order {
+      font-size: 1.1em;
+    }
+
+    .transaction-id {
+      font-size: .825em;
+      padding-top: 1em;
+      padding-bottom: 1.25em;
+    }
+
+    .book-img,
+    .book-title,
+    .book-price {
+      padding-top: 1em;
+    }
+
+    .book-img,
+    .book-qty,
+    .book-price {
+      padding-bottom: 2em;
+    }
+
+    .book-qty {
+      font-size: .825em;
+      color: #808080;
+      padding-top: .25em;
+    }
+
+    .book-title {
+      font-size: 1em;
+      text-align: left;
+    }
+
+    .tax-title,
+    .tax-price,
+    .shipping-title,
+    .shipping-price,
+    .total-title,
+    .total-price {
+      padding-top: 1em;
+    }
+
+    .total-title,
+    .total-price {
+      font-size: 1.1em;
+      font-weight: 700;
+      padding-bottom: 2em;
+    }
+
+    .smiles {
+      padding-top: 1.8em;
+    }
+
+    .davis {
+      padding-top: .9em;
+    }
+
+    .questions {
+      font-size: 1em;
+      padding: 0 1.5em 2em;
+      line-height: 1.2;
+    }
+
+    .questions .bold {
+      font-weight: 700;
+    }
+
+    .questions .link {
+      text-decoration: none;
+      color: #0487ff;
+    }
+
+    .footer-link {
+      font-size: .8em;
+      text-decoration: none;
+      color: #0487ff;
+      padding-left: .25em;
+      padding-right: .25em;
+    }
+
+  </style>
+  <!-- Title -->
+  <!-- Preview -->
+  <!-- Font -->
+  <!-- Attribute -->
+  <!-- Style -->
+</head>
+
+<body style="word-spacing:normal;background-color:#f0f2f5;">
+  <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"> Great news! Your Prima Coffee order has shipped and is currently making its way to you. </div>
+  <div style="background-color:#f0f2f5;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:420px;" width="420" bgcolor="#f0f2f5" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#f0f2f5;background-color:#f0f2f5;margin:0px auto;max-width:420px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f0f2f5;background-color:#f0f2f5;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+              <!-- header -->
+              <!--[if mso | IE]><tr><td class="" width="420px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:420px;" width="420" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:420px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:420px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="vertical-align:top;padding:40px 0;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                                            <tbody>
+                                              <tr>
+                                                <td style="width:45px;">
+                                                  <a href="#" target="_blank">
+                                                    <img alt="logo" height="auto" src="img/header-logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="45" />
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- Transaction Top -->
+              <!--[if mso | IE]><tr><td class="" width="420px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:420px;" width="420" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;border-radius:7px;max-width:420px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;border-radius:7px;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:420px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="vertical-align:top;padding:0;padding-right:20px;padding-left:20px;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                          <div style="font-family:Lato;font-size:15px;line-height:1;text-align:left;color:#000000;">
+                                            <!-- Transaction Number -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                              <tr>
+                                                <td class="transaction">
+                                                  <p class="transaction-text">Transaction #6500500</p>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- / Transaction Number -->
+                                            <!-- Greeting & Symbol -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                              <tr>
+                                                <td class="greet-sym" align="left">
+                                                  <p class="greeting">Hi Smiles Davis,</p>
+                                                </td>
+                                                <td class="greet-sym" align="right">
+                                                  <img class="symbol" src="img/logo2.png" alt="symbol">
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- / Greeting & Symbol -->
+                                            <!-- Great News Shipping Tracking -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                              <tr>
+                                                <td class="greet">
+                                                  <p class="greet-news">Great news! Your <span>Prima Coffee</span> order <span>has shipped</span> and is currently making its way to you.</p>
+                                                  <div class="meter-bar">
+                                                    <div class="meter-bar-fill"></div>
+                                                  </div>
+                                                  <p class="shipped">Shipped</p>
+                                                  <a class="track-btn" href="#">Track your order on Fast.co</a>
+                                                  <p class="update">We’ll update your dashboard when the order is out for delivery</p>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- / Great News Shipping Tracking -->
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- / Transaction Top -->
+              <!-- Spacer -->
+              <!--[if mso | IE]><tr><td class="" width="420px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:420px;" width="420" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:420px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:420px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="vertical-align:top;padding:0;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                          <div style="font-family:Lato;font-size:15px;line-height:1;text-align:left;color:#000000;">
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" role="presentation">
+                                              <tr>
+                                                <td class="spacer"></td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- / Spacer -->
+              <!-- Transaction Bottom -->
+              <!--[if mso | IE]><tr><td class="" width="420px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:420px;" width="420" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;border-radius:7px;max-width:420px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;border-radius:7px;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:420px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="vertical-align:top;padding:0;padding-right:20px;padding-left:20px;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                                          <div style="font-family:Lato;font-size:15px;line-height:1;text-align:left;color:#000000;">
+                                            <!-- Transaction Order ID -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-bottom: 2px solid #f0f2f5;">
+                                              <tr>
+                                                <td class="transaction-order-id">
+                                                  <p class="transaction-order">Your Order</p>
+                                                  <p class="transaction-id">Order ID:: 650055</p>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- / Transaction Order ID -->
+                                            <!-- Book -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-bottom: 2px solid #f0f2f5;">
+                                              <tr>
+                                                <td width="15%">
+                                                  <img class="book-img" src="img/book.png" alt="book" width="65px">
+                                                </td>
+                                                <td width="70%" align="left" style="padding-left: 1em;">
+                                                  <p class="book-title">What I Know About Running Coffee Shops Book </p>
+                                                  <p class="book-qty">Qty: 1 </p>
+                                                </td>
+                                                <td width="15%" align="right">
+                                                  <p class="book-price">$40.00</p>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- / Book -->
+                                            <!-- Receipt Top -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-bottom: 2px solid #f0f2f5;">
+                                              <tr>
+                                                <td style="padding-top: 2em;" width="50%">
+                                                  <p class="subtotal-title">Subtotal</p>
+                                                  <p class="tax-title">Tax</p>
+                                                  <p class="shipping-title">Shipping</p>
+                                                  <p class="total-title">Total (USD)</p>
+                                                </td>
+                                                <td style="padding-top: 2em;" width="50%" align="right">
+                                                  <p class="subtotal-price">$40.00</p>
+                                                  <p class="tax-price">$0.00</p>
+                                                  <p class="shipping-price">$8.60</p>
+                                                  <p class="total-price">$48.60</p>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- / Receipt Top -->
+                                            <!-- Receipt Bottom -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" role="presentation">
+                                              <tr>
+                                                <td style="padding-top: 2em;" width="50%" align="left">
+                                                  <p class="amex">amex 6500</p>
+                                                  <p class="smiles">Smiles Davis</p>
+                                                  <p class="davis">&nbsp;</p>
+                                                </td>
+                                                <td style="padding-top: 2em;" swidth="50%" align="right">
+                                                  <p class="amex">January 14, 2022</p>
+                                                  <p class="smiles">600 Montgomery St San</p>
+                                                  <p class="davis">Franscisco, CA 9411</p>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- / Receipt Bottom -->
+                                            <!-- Questions -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" role="presentation">
+                                              <tr>
+                                                <td style="padding-top: 2em;" align="center">
+                                                  <p class="questions">Questions about your order? Please contact <span class="bold">Prima Coffee</span> or visit <a class="link" href="#">https://prima-coffee.com</a></p>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- /Questions -->
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+              <!-- / Transaction Bottom -->
+              <!-- Footer -->
+              <!--[if mso | IE]><tr><td class="" width="420px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:420px;" width="420" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+              <div style="margin:0px auto;max-width:420px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                  <tbody>
+                    <tr>
+                      <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:420px;" ><![endif]-->
+                        <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+                                <td style="vertical-align:top;padding:0;padding-top:22px;padding-bottom:33px;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                          <div style="font-family:Lato;font-size:12px;font-weight:500;line-height:1;text-align:center;color:#808080;">2021 Fast</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center" style="font-size:0px;padding:0;padding-top:22px;word-break:break-word;">
+                                          <div style="font-family:Lato;font-size:12px;font-weight:500;line-height:1;text-align:center;color:#808080;">349 9th Street <br> San Francisco, CA 94103</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center" style="font-size:0px;padding:0;padding-top:15px;word-break:break-word;">
+                                          <div style="font-family:Lato;font-size:15px;line-height:1;text-align:center;color:#000000;"><a class="footer-link" href="#">Contact Us</a>
+                                            <a class="footer-link" href="#">Privacy Policy</a>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+  </div>
+</body>
+
+</html>
