@@ -96,6 +96,8 @@ header .container nav .header__hamburger {
   display: flex;
   flex-direction: column;
   gap: 0.3em;
+  position: relative;
+  z-index: 99;
   cursor: pointer;
 }
 @media only screen and (min-width: 62em) {
@@ -110,12 +112,28 @@ header .container nav .header__hamburger .bar {
   border-radius: 0.5rem;
 }
 header .container nav ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
+  background-color: var(--clr-primary-800);
 }
 @media only screen and (min-width: 62em) {
   header .container nav ul {
     display: flex;
-    gap: 3em;
+    flex-direction: row;
+    position: unset;
+    background-color: unset;
+    min-height: unset;
+    justify-content: unset;
+    width: unset;
+    align-items: unset;
   }
 }
 header .container nav ul li {
@@ -130,6 +148,9 @@ header .container nav ul li a {
 }
 header .container nav ul li a:hover {
   color: var(--clr-primary-700);
+}
+header .container nav ul.is-active {
+  display: flex;
 }
 
 .hero {

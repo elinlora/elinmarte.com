@@ -94,6 +94,8 @@ header {
         display: flex;
         flex-direction: column;
         gap: .3em;
+        position: relative;
+        z-index: 99;
         cursor: pointer;
         @media only screen and (min-width: 62em) {
           display: none;
@@ -106,10 +108,26 @@ header {
         }
       }
       ul {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-height: 100vh;
+        width: 100%;
         display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3em;
+        align-items: center;
+        background-color: var(--clr-primary-800);
         @media only screen and (min-width: 62em) {
           display: flex;
-          gap: 3em;
+          flex-direction: row;
+          position: unset;
+          background-color: unset;
+          min-height: unset;
+          justify-content: unset;
+          width: unset;
+          align-items: unset;
         }
         li {
           font-size: 1.2rem;
@@ -124,6 +142,9 @@ header {
             }
           }
         }
+      &.is-active {
+        display: flex;
+      }
       }
     }
   }
