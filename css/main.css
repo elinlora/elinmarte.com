@@ -155,7 +155,17 @@ header .container nav ul.is-active {
 
 .hero {
   background-image: url("/img/funky-lines.png");
-  min-height: 100vh;
+  padding: 3em 0;
+}
+@media only screen and (min-width: 28.75em) {
+  .hero {
+    padding: 9em 0;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .hero {
+    padding: unset;
+  }
 }
 .hero .container {
   min-height: 100vh;
@@ -230,6 +240,7 @@ header .container nav ul.is-active {
   position: relative;
   width: 24rem;
   align-self: center;
+  width: 100%;
 }
 @media only screen and (min-width: 62em) {
   .hero .container .hero__content .hero__img {

@@ -152,7 +152,14 @@ header {
 
 .hero {
   background-image: url('/img/funky-lines.png');
-  min-height: 100vh;
+  // min-height: 100vh;
+  padding: 3em 0;
+  @media only screen and (min-width: 28.75em) {
+    padding: 9em 0;
+  }
+  @media only screen and (min-width: 62em) {
+    padding: unset;
+  }
   .container {
     min-height: 100vh;
     display: grid;
@@ -220,6 +227,7 @@ header {
         position: relative;
         width: 24rem;
         align-self: center;
+        width: 100%;
         @media only screen and (min-width: 62em) {
           width: 50%;
         }
