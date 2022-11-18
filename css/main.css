@@ -146,6 +146,8 @@ header .container nav .nav-links {
     justify-content: unset;
     width: unset;
     align-items: unset;
+    visibility: unset;
+    opacity: unset;
   }
 }
 header .container nav .nav-links li {
