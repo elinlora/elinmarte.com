@@ -450,7 +450,7 @@ header .container nav .nav-links.is-active {
   transition: all 0.15s ease-in-out;
   opacity: 0;
 }
-.projects .projects__grid .projects__grid--email:hover, .projects .projects__grid .projects__grid--email:hover .project__grid--email-launch {
+.projects .projects__grid .projects__grid--email:hover, .projects .projects__grid .projects__grid--email:hover .project__grid--email-view {
   opacity: 100%;
   transform: scale(102%);
 }
