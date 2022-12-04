@@ -437,7 +437,7 @@ header .container nav .nav-links.is-active {
   align-items: flex-end;
   overflow: hidden;
 }
-.projects .projects__grid .projects__grid--email .project__grid--email-launch {
+.projects .projects__grid .projects__grid--email .project__grid--email-view {
   text-align: center;
   width: 100%;
   display: inline-block;
