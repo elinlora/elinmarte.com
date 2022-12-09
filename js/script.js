@@ -5,7 +5,7 @@ const links = document.querySelectorAll('.nav-links li');
 
 window.onload = () => {
   window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 60) {
       header.classList.add('is-scrolling');
     } else {
       header.classList.remove('is-scrolling');
